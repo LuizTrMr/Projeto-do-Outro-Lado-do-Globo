@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Outro lado do globo</title>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body class="bg-dark text-white">
+        <div id="top_banner" class="jumbotron jumbotron-fluid">
+            <div id="texto_intro" class="container">
+                <h1 class=" display-4 text-center font-weight-bold"><i>No Outro Lado do Globo</i></h1>
+            </div>
+        </div>
+        <div id="texto_intro" class="container w-50 border border-secondary">
+            <p id="tab_content" class="lead">Quando crianças, aqui no ocidente, nos contam que se cavamos um buraco bem grande -
+            chegamos no Japão. Claro que para isso teríamos que passar, apenas, pelo núcleo do planeta, que tem uma
+            temperatura de aproximadamente 6000ºC. Caso possível, sabemos que não iríamos nos encontrar nas ruas de Tóquio pois o destino 
+            depende do lugar que começamos a cavar. E aí... já se perguntou onde você apareceria no globo se começasse a cavar agora?</p>
+            <p id="tab_content2" class="lead">Esse destino, o ponto oposto da sua partida, e o lugar de origem são chamados de 
+            <bold>Pontos Antipodais.</bold> Podemos calcular este ponto de destino 'B' facilmente: basta <mark>inverter a latitude</mark>
+            do ponto inicial 'A' e depois <mark>cálculamos o ângulo suplementar ao ponto 'A' e invertemos sua longitude.</mark></p>
+            <div class="text-center">
+                <img id="esfera" src="esfera.png" alt="Pontos Antipodais" >
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="display-4 text-center lead"><u>Utilize a sua posição e clique no botão selecionar abaixo :</u></h1>
+            
+            <br></br>
+            
+            <div class='text-center'>
+                <button id="seu_local" type="button" class="btn btn-info">Sua Posição</button>
+                <img id="pin" src="pin_img.png" alt="Location Pin">
+            </div>
+        </div>
+        
+        <br></br>
+        
+        <div class="container">
+            <h1 class="display-4 text-center lead"><u>Ou escolha o ponto de partida arrastando o marcador no mapa abaixo:</u></h1>
+            <div id="map" class="container" style="height: 600px"></div>
+            <br></br>
+            <div class="text-center">
+                <button id="selecionar" type="button" class="btn btn-info">Selecionar</button>
+            </div>    
+        </div>
+
+        <br></br>
+
+        <div class="container-fluid border-top">
+            <h2 class="text-center"><i>Luiz Felipe Triques Moraes</i></h2>
+        </div>
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCBvslsnSqrpxOpal5ed83DNl_RXKGDgc&callback=initMap&v=weekly" defer ></script>
+        <script src="js/mainscript.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+    </body>
+</html>

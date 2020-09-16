@@ -1,0 +1,26 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+}
+
+#top_banner,#texto_intro{
+    background-color: #525557;
+}
+
+#map {
+    height: 100%;
+}
+
+mark{
+    background-color: #084d6e;
+    color : white;
+}
+
+#esfera{
+    width :300px;
+    height :300px;
+}
+
+#pin{
+    width :40px;
+    height :40px;
+}
